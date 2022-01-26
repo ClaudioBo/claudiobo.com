@@ -1,15 +1,69 @@
 .bg-scroll {
-    transform      : perspective(600px) rotateX(8deg) rotateY(5deg);
-    animation      : slide 45s linear infinite;
-    background     : url("bg.png") repeat;
-    background-size: 144px 720px;
-    position       : fixed;
-    display        : block;
-    height         : 140%;
-    width          : 150vw;
-    z-index        : -1;
-    top            : -30%;
-    left           : -10%;
+    animation : slide 45s linear infinite;
+    background: url("bg.png") repeat;
+    position  : fixed;
+    display   : block;
+    z-index   : -1;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .bg-scroll {
+        filter: hue-rotate(72deg);
+        transform: perspective(600px) rotateX(8deg) rotateY(5deg);
+        height: 170%;
+        width: 130%;
+        top: -55%;
+        left: -10%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .bg-scroll {
+        filter: hue-rotate(144deg);
+        transform: perspective(600px) rotateX(8deg) rotateY(5deg);
+        height: 130%;
+        width: 130%;
+        top: -25%;
+        left: -10%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .bg-scroll {
+        filter: hue-rotate(216deg);
+        transform: perspective(600px) rotateX(8deg) rotateY(5deg);
+        height: 130%;
+        width: 140%;
+        top: -15%;
+        left: -10%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .bg-scroll {
+        filter: hue-rotate(288deg);
+        transform: perspective(600px) rotateX(8deg) rotateY(5deg);
+        height: 130%;
+        width: 150%;
+        top: -15%;
+        left: 0%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .bg-scroll {
+        filter: hue-rotate(0deg);
+        transform : perspective(600px) rotateX(8deg) rotateY(5deg);
+        height    : 160%;
+        width     : 160%;
+        top       : -30%;
+        left      : -30%;
+    }
 }
 
 @keyframes slide {
@@ -18,6 +72,6 @@
     }
 
     to {
-        background-position: 1632px -480px;
+        background-position: 1920px -960px;
     }
 }

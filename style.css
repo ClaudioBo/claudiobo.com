@@ -9,60 +9,72 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .bg-scroll {
-        filter: hue-rotate(72deg);
+        filter   : hue-rotate(72deg);
         transform: perspective(600px) rotateX(8deg) rotateY(5deg);
-        height: 170%;
-        width: 130%;
-        top: -55%;
-        left: -10%;
+        height   : 115%;
+        width    : 115%;
+        top      : -10%;
+        left     : -5%;
     }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .bg-scroll {
-        filter: hue-rotate(144deg);
+        filter   : hue-rotate(144deg);
         transform: perspective(600px) rotateX(8deg) rotateY(5deg);
-        height: 130%;
-        width: 130%;
-        top: -25%;
-        left: -10%;
+        height   : 120%;
+        width    : 120%;
+        top      : -11%;
+        left     : -5%;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .bg-scroll {
-        filter: hue-rotate(216deg);
+        filter   : hue-rotate(216deg);
         transform: perspective(600px) rotateX(8deg) rotateY(5deg);
-        height: 130%;
-        width: 140%;
-        top: -15%;
-        left: -10%;
+        height   : 115%;
+        width    : 115%;
+        top      : -15%;
+        left     : -5%;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .bg-scroll {
-        filter: hue-rotate(288deg);
+        filter   : hue-rotate(288deg);
         transform: perspective(600px) rotateX(8deg) rotateY(5deg);
-        height: 130%;
-        width: 150%;
-        top: -15%;
-        left: 0%;
+        height   : 120%;
+        width    : 120%;
+        top      : -15%;
+        left     : -2%;
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .bg-scroll {
-        filter: hue-rotate(0deg);
-        transform : perspective(600px) rotateX(8deg) rotateY(5deg);
-        height    : 160%;
-        width     : 160%;
-        top       : -30%;
-        left      : -30%;
+        filter   : hue-rotate(0deg);
+        transform: perspective(600px) rotateX(8deg) rotateY(5deg);
+        height   : 115%;
+        width    : 115%;
+        top      : -15%;
+        left     : 0%;
+    }
+}
+
+/* Extra-extra large devices (1920px and up) */
+@media only screen and (min-width: 1921px) {
+    .bg-scroll {
+        filter   : hue-rotate(144deg);
+        transform: perspective(600px) rotateX(8deg) rotateY(5deg);
+        height   : 120%;
+        width    : 120%;
+        top      : -20%;
+        left     : 2%;
     }
 }
 

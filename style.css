@@ -1,41 +1,47 @@
-.bg-scroll {
-    animation      : slide 60s linear infinite;
-    background     : url("bg.png") repeat;
-    background-size: calc(1920px * 2) calc(960px * 2);
-    position       : fixed;
-    display        : block;
-    z-index        : -1;
-    height         : 100%;
-    width          : 100%;
-    top            : 0;
-    left           : 0;
+/* text stuff */
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    color      : white;
+    filter     : drop-shadow(2px 4px 6px black);
 }
 
+/* containers or positioning stuff */
 
-@keyframes slide {
-    from {
-        background-position: 0 0;
-    }
-
-    to {
-        background-position: calc(1920px * 2) calc(960px * -2);
-    }
+.center {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    text-align     : center;
+    min-height     : 95vh;
 }
 
-/* 
-#This 3d effect is kinda slowish on big screens and i dont wanna risk it u.u
+.lookaround {
+    transform: perspective(300px);
+    animation: look 5s ease-in-out infinite;
+}
+
+/* background stuff */
+
 .bg-scroll {
-    transform      : perspective(600px) rotateX(8deg) rotateY(5deg);
-    animation      : slide 60s linear infinite;
-    background     : url("bg.png") repeat;
-    background-size: calc(1920px * 2) calc(960px * 2);
-    position       : fixed;
-    display        : block;
-    z-index        : -1;
-    height         : 100%;
-    width          : 100%;
-    top            : 0;
-    left           : 0;
+    transform             : perspective(15cm) rotateX(8deg) rotateY(5deg);
+    animation             : slide 5s linear infinite;
+    background            : url("img/bg.png") repeat;
+    image-rendering       : optimizeSpeed;
+    image-rendering       : -moz-crisp-edges;
+    image-rendering       : -o-crisp-edges;
+    image-rendering       : -webkit-optimize-contrast;
+    image-rendering       : pixelated;
+    image-rendering       : optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
+    position              : fixed;
+    display               : block;
+    z-index               : -1;
+    height                : 100%;
+    width                 : 100%;
+    top                   : 0;
+    left                  : 0;
 }
 
 @media only screen and (min-width: 600px) {
@@ -90,4 +96,28 @@
         top   : -20%;
         left  : 2%;
     }
-} */
+}
+
+@keyframes slide {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: calc(64px * 2) calc(64px * -2);
+    }
+}
+
+@keyframes look {
+    0% {
+        transform: perspective(10cm) rotateY(20deg);
+    }
+
+    50% {
+        transform: perspective(10cm) rotateY(-20deg);
+    }
+
+    100% {
+        transform: perspective(10cm) rotateY(20deg);
+    }
+}

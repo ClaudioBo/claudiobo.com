@@ -1,14 +1,31 @@
 /* text stuff */
 
+* {
+    font-family: "Roboto", sans-serif;
+    overflow   : hidden;
+    margin     : 0 auto;
+}
+
 h1 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 800;
     color      : white;
+    font-weight: 800;
+    font-size  : 400%;
+    filter     : drop-shadow(2px 4px 6px black);
+}
+
+p {
+    color      : white;
+    font-weight: 800;
+    font-size  : 200%;
+    filter     : drop-shadow(2px 4px 6px black);
+}
+
+img {
+    max-height: 600px;
     filter     : drop-shadow(2px 4px 6px black);
 }
 
 /* containers or positioning stuff */
-
 .center {
     display        : flex;
     justify-content: center;
@@ -18,12 +35,11 @@ h1 {
 }
 
 .lookaround {
-    transform: perspective(300px);
     animation: look 5s ease-in-out infinite;
+    padding: 1em;
 }
 
 /* background stuff */
-
 .bg-scroll {
     transform             : perspective(15cm) rotateX(8deg) rotateY(5deg);
     animation             : slide 5s linear infinite;
@@ -110,14 +126,14 @@ h1 {
 
 @keyframes look {
     0% {
-        transform: perspective(10cm) rotateY(20deg);
+        transform: perspective(30cm) rotateY(20deg);
     }
 
     50% {
-        transform: perspective(10cm) rotateY(-20deg);
+        transform: perspective(30cm) rotateY(-20deg);
     }
 
     100% {
-        transform: perspective(10cm) rotateY(20deg);
+        transform: perspective(30cm) rotateY(20deg);
     }
 }

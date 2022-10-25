@@ -10,20 +10,29 @@
 
 /* cosas */
 
-#random-logo {
-    padding-bottom: 1em;
-    max-width     : 300px;
-    max-height    : 300px;
+.centerfuck {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.foto-perfil {
+.logo {
     padding-bottom: 1em;
+    max-width: 50%;
+}
+
+.fpf-container {
+    padding-bottom: 1em;
+}
+
+#random-claudio {
+    width: 256px;
 }
 
 .main {
-    width     : 800px;
-    max-width : 800px;
-    min-height: 100%;
+    /* width     : 800px; */
+    max-width: 800px;
 }
 
 .content {
@@ -54,6 +63,7 @@
 
 .lookaround {
     animation: lookaround 5s ease-in-out infinite;
+    z-index  : 50;
 }
 
 @keyframes lookaround {
@@ -84,14 +94,14 @@
     -ms-interpolation-mode: nearest-neighbor;
     position              : fixed;
     display               : block;
-    z-index               : -1;
+    z-index               : -999;
     height                : 100%;
     width                 : 100%;
 }
 
 @media only screen and (max-width: 768px) {
     .bg-scroll {
-        transform: scale(200%) perspective(15vh) rotateX(8deg) rotateY(5deg);
+        transform: scale(215%) perspective(15vh) rotateX(8deg) rotateY(5deg);
     }
 }
 

@@ -1,30 +1,3 @@
-// Logo
-const logo_list = [
-    "burgerking.png",
-    "corona.png",
-    "dominos.png",
-    "facebook.png",
-    "ford.png",
-    "google.png",
-    "googleviejo.png",
-    "heineken.png",
-    "instaold.png",
-    "lego.png",
-    "mario.png",
-    "nike.png",
-    "pixeles.png",
-    "pokemon.png",
-    "wordart1.png",
-    "wordart2.png",
-    "youtube.png",
-    "minecraft.png",
-    "paint.png",
-]
-
-const logo_selected = logo_list[Math.floor(Math.random()*logo_list.length)]
-const logo_elem = document.getElementById("random-logo")
-logo_elem.src = `./img/memes/${logo_selected}`
-
 // Claudio
 const claudio_list = [
     "1.png",

@@ -83,7 +83,7 @@
 .bg-scroll {
     transform             : scale(200%) perspective(15vw) rotateX(8deg) rotateY(5deg);
     animation             : bg-slide 5s linear infinite;
-    background            : url("./img/bg.png") repeat;
+    background            : url("/img/bg.png") repeat;
     background-size       : calc(5vh);
     image-rendering       : optimizeSpeed;
     image-rendering       : -moz-crisp-edges;

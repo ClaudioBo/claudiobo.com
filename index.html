@@ -6,41 +6,39 @@
     <meta name="robots" content="noindex">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-    <title>Claudio Bo &mdash; Developer</title>
+    <title>Claudio Bo &mdash; DevOps/Developer</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="./css/style.css">
     <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="./dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body style="background-color: #00a3da;">
+<body style="background-color: #2e2e2e;">
     <div class="bg-scroll"></div>
-
-    <div class="centerfuck">
+    <div class="center-main">
         <div class="main content glassmorphism">
             <div class="container text-center bg-transparent">
                 <div class="row">
                     <div class="col">
-                        <div class="lookaround">
-                            <img class="logo shadow-text" src="./img/logo.png">
-                    </div>
-                    <div class=" fpf-container">
-                            <img id="random-claudio" class="img-fluid rounded-circle shadow" alt="Claudio Bo" src="./img/me.jpg">
+                        <h1><strong>Claudio Bo</strong></h1>
+                        <div class="pp-container">
+                            <img class="img-fluid rounded-circle shadow" alt="Profile picture" src="https://avatars.githubusercontent.com/u/29718791">
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <div class="content seccion">
-                            <h3><strong>Quick About Me</strong></h3>
-                            <p>My name is <strong>Claudio Barba</strong>, a 22 year old from <strong>Sonora, México</strong> 🌮</p>
-                            <p>I have been working lately at <strong>Backend Development</strong>, <strong>System Administration</strong> and <strong>DevOps Engineering</strong></p>
+                            <strong>Quick About Me</strong>
+                            <p id="year-old">My name is <strong>Claudio Barba</strong>, a {{years_old}} year old from <strong>Sonora, México</strong> 🌮</p>
+                            <p>I have been working lately at <strong>DevOps Engineering</strong>, <strong>System Administration</strong> and <strong>Backend Development</strong></p>
                             <p>My main language is <strong>Spanish</strong> although I also know <strong>English</strong> pretty well</p>
                         </div>
                         <br>
                         <a href="#" class="btn btn-secondary disabled shadow">About & Skills 💬</a>
-                        <a href="#" class="btn btn-secondary disabled shadow">Experience 🧪</a>
+                        <a href="#" class="btn btn-secondary disabled shadow">Experience 🧠</a>
                         <a href="#" class="btn btn-secondary disabled shadow">Download Resume 📁</a>
+                        <a href="#" class="btn btn-secondary disabled shadow">Experiments 🧪</a>
                     </div>
                 </div>
                 <br>
@@ -55,5 +53,11 @@
     </div>
 
 </body>
+
+<script>
+    const yearOldElement = document.getElementById("year-old")
+    const dateNow = new Date()
+    yearOldElement.textContent = yearOldElement.textContent.replace("{{years_old}}", dateNow.getFullYear() - 2000)
+</script>
 
 </html>
